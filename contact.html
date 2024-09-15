@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcendence - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Contact page of Transcendence - get in touch through the contact form provided.">
+</head>
+<body class="contact-page"> <!-- Add class 'contact-page' for the Contact page background -->
+    <header>
+        <h1>Transcendence</h1>
+        <h2 class="subtitle">Beyond the Known—Unveiling Intellectual, Spiritual, and Scientific Horizons</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="photo-grid.html">Photo Grid</a></li> 
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to reach out, please fill out the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+        <picture>  <!--The use of <picture> elements with srcset for different image resolutions is to make sure the website is responsive and optimized for different screen sizes, including mobile phones.-->
+            <source srcset="pictures/contact/contact-480.png" media="(max-width: 600px)">
+            <source srcset="pictures/contact/contact-original-960.png" media="(max-width: 960px)">
+            <source srcset="pictures/contact/contact-1920.png" media="(max-width: 1920px)">
+            <img src="pictures/contact/contact-1920.png" alt="Contact - Transcendence">
+        </picture>
+    </section>
+    <footer> 
+        <p>&copy; 2024 Sapiential Odyssey. All rights reserved.</p>
+    </footer> 
+</body>
+</html>
